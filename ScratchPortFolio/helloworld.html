@@ -1,0 +1,29 @@
+<section id="helloworld">
+    <h1 class="glow">Hello World!</h1>
+</section>
+
+<style>
+#helloworld {
+    padding: 20px;
+}
+
+.glow {
+    font-size: 48px;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+    }
+    to {
+        text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc, 0 0 40px #00ffcc;
+    }
+}
+</style>
+
+<script>
+console.log('Hello World section loaded');
+</script>
